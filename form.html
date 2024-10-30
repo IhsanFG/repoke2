@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 </head>
 <body>
- <h1>Buat Account Baru</h1>
+    <h1>Buat Account Baru</h1>
     <h4>Sign Up Form</h4>
     <form action="selamat1.html" method="get">
         <p>Frist name :</p>
@@ -44,6 +44,62 @@
 
         <label for="bio">Bio</label><br>
         <textarea id="bio" name="bio"></textarea><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eks.css">
+    <title>-</title>
+</head>
+<body>
+    <form action="welcome.html" method="get">
+        <h1>Buat Account Baru</h1>
+        <h4>Sign Up Form</h4>
+        
+        <p>First Name :</p>
+        <input type="text" id="username" name="username" required><br>
+        
+        <p>Last Name :</p>
+        <input type="text" id="lastname" name="lastname" required><br>
+        
+        <label>Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <div class="gender">
+            <label>Gender</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div><br>
+        
+        <label for="nationality">Nationality</label><br>
+        <select id="nationality" name="nationality">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Thailand">Thailand</option>
+        </select><br>
+
+        <div class="language">
+            <label>Language Spoken</label><br>
+            <input type="checkbox" id="bahasa_indonesia" name="language" value="Bahasa Indonesia">
+            <label for="bahasa_indonesia">Bahasa Indonesia</label><br>
+            <input type="checkbox" id="english" name="language" value="English">
+            <label for="english">English</label><br>
+            <input type="checkbox" id="other" name="language" value="Other">
+            <label for="other">Other</label>
+        </div><br>
+
+        <label for="bio">Bio</label><br>
+        <textarea id="bio" name="bio" rows="4"></textarea><br>
 
         <input type="submit" value="Sign Up">
     </form>
